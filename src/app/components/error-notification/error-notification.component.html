@@ -1,0 +1,21 @@
+<div style="font-weight: bold;">
+    Error
+</div>
+
+<div class="content-style" style="margin: 25px 0; text-align: center;">
+    <h3 style="margin-bottom: 0;">{{data.message}}</h3>
+</div>
+<!--<div *ngIf="data.type == 'error'">
+    <div>
+        <button style="margin-bottom: 10px;" mat-flat-button (click)="show = !show">
+            <span *ngIf="show">{{'COST.SHOW_LESS' | translate}}</span>
+            <span *ngIf="!show">{{'COST.SHOW_MORE' | translate}}</span>
+        </button>
+    </div>
+    <div class="errorDetails" [class.show]="show">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+</div>-->
+<div style="text-align: center;">
+    <button mat-flat-button (click)="snackBarRef.dismiss()">close</button>
+</div>

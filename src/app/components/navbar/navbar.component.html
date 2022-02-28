@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="navbar" style="padding-left: 20%; padding-right: 23%;">
+
+    <div routerLink="/" style="cursor: pointer;">Supracontrol</div>
+    <div>
+
+        <button mat-icon-button *ngIf="!loggedIn" routerLink="/login" style="cursor: pointer; font-size: 18px;">
+            <mat-icon>lock</mat-icon> <span class="aligned-with-icon">Login</span>
+        </button>
+        <!--<span *ngIf="!loggedIn" routerLink="/login" style="cursor: pointer;">Login</span>-->
+        <!--<span *ngIf="loggedIn" (click)="logout()" style="cursor: pointer;">Logout</span>-->
+        <button *ngIf="loggedIn" mat-icon-button style="font-size: 20px;" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>person</mat-icon> <span class="aligned-with-icon">{{username}}</span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="logout()">
+              <mat-icon>power_settings_new</mat-icon>
+              <span>Logout</span>
+            </button>
+          </mat-menu>
+    </div>
+</mat-toolbar>

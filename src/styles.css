@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-form-field{width:100%;}
+
+.mat-tooltip {
+    /*background: #3b3b3b !important;*/
+    font-size: 17px !important;
+    background: #f3f3f3;
+    color: #4051b5 !important;
+    font-weight: 400;
+    border: 1px solid #a1a9db !important;
+    border-radius: 5px;
+    padding: 5px 15px !important;
+    margin: 6px !important;
+  }
+
+.container {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.aligned-with-icon{
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px; /* optional */
+}
+
+.green-snackbar{
+  color: green;
+  border: 1px solid green;
+  background-color: honeydew;
+  font-size: 20px;
+}
+
+.red-snackbar{
+  color: #C62828;
+  border: 1px solid #C62828;
+  background-color: #ffcfcf;
+  font-size: 20px;
+}
+
+.error.mat-snack-bar-container{
+  border: #C62828 1px solid;
+  color: #C62828;
+  background: #ffcfcf;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin: 24px;
+  max-width: 33vw;
+  min-width: 344px;
+  padding: 14px 16px;
+  min-height: 48px;
+  transform-origin: center;
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+

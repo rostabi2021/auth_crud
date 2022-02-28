@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "countryCode":"385",
+        "countryName":"Croatia"
+    },
+    {
+        "id":"2",
+        "countryCode":"381",
+        "countryName":"Serbia"
+    },
+    {
+        "id":"3",
+        "countryCode":"386",
+        "countryName":"Slovenia"
+    },
+    {
+        "id":"4",
+        "countryCode":"43",
+        "countryName":"Austria"
+    },
+    {
+        "id":"5",
+        "countryCode":"49",
+        "countryName":"Germany"
+    }
+]

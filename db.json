@@ -1,0 +1,120 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "2",
+      "username": "amilenkovic",
+      "firstName": "Aleksandar",
+      "lastName": "Milenković",
+      "password": "password2",
+      "OIB": "12345678913",
+      "country": "2"
+    },
+    {
+      "id": "5",
+      "username": "amerkel",
+      "firstName": "Angela",
+      "lastName": "Merkel",
+      "password": "password5",
+      "OIB": "12345678916",
+      "country": "5"
+    },
+    {
+      "id": "6",
+      "username": "afranic",
+      "firstName": "Antun",
+      "lastName": "Franić",
+      "password": "password6",
+      "OIB": "12345678918",
+      "country": "1"
+    },
+    {
+      "id": "xnkstPr",
+      "username": "msever",
+      "firstName": "Marko",
+      "lastName": "Sever",
+      "password": "password888",
+      "OIB": "55566633322",
+      "country": "1"
+    },
+    {
+      "id": "9zgsl1h",
+      "username": "mbacic",
+      "firstName": "Marina",
+      "lastName": "Bačić",
+      "password": "adiasdaskjdask",
+      "OIB": "43232235678",
+      "country": "1"
+    },
+    {
+      "id": "4w8SgCF",
+      "username": "jdrnovsek",
+      "firstName": "Janez",
+      "lastName": "Drnovšek",
+      "password": "fdsfasdf4324523",
+      "OIB": "98863254785",
+      "country": "3"
+    },
+    {
+      "username": "dender",
+      "firstName": "Doris",
+      "lastName": "Ender",
+      "password": "dadadassfsasf",
+      "OIB": "85247856321",
+      "country": "4",
+      "id": "7XJ7Cez"
+    },
+    {
+      "username": "mbutina",
+      "firstName": "Marko",
+      "lastName": "Butina",
+      "password": "afamlsfmalmf8",
+      "OIB": "85698545698",
+      "country": "1",
+      "id": "Kkfw5Qv"
+    }
+  ],
+  "countries": [
+    {
+      "id": "1",
+      "countryCode": "385",
+      "countryName": "Croatia"
+    },
+    {
+      "id": "2",
+      "countryCode": "381",
+      "countryName": "Serbia"
+    },
+    {
+      "id": "3",
+      "countryCode": "386",
+      "countryName": "Slovenia"
+    },
+    {
+      "id": "4",
+      "countryCode": "43",
+      "countryName": "Austria"
+    },
+    {
+      "id": "5",
+      "countryCode": "49",
+      "countryName": "Germany"
+    }
+  ]
+}

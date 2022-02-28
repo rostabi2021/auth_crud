@@ -1,0 +1,13 @@
+<div style = "position:relative; right: -16px; top:-18px; overflow: auto;">
+    <a mat-dialog-close><mat-icon style="font-weight: 1000; cursor: pointer; float: right;">clear</mat-icon></a>
+</div>
+  
+<h2 mat-dialog-title  align="center" style="margin: 25px 0">Are you sure you want to delete user <span style="color:#3f51b5;;">{{user.firstName}} {{user.lastName}}</span>?</h2>
+
+<mat-dialog-actions align="center">
+    <div style="margin-top: 10px; margin-bottom: 20px; text-align: center;">
+        <button mat-dialog-close mat-flat-button style="background-color: #9c9c9c; color: white;">Close</button>
+        <button (click)="onDeleteUser()" [mat-dialog-close]="true" mat-flat-button color="warn">Delete</button>
+        <!--<button *ngIf="!addNewUserForm.valid" style="cursor: not-allowed;" disabled mat-flat-button color="primary">Submit</button>-->
+    </div>
+</mat-dialog-actions>

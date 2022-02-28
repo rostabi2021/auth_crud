@@ -1,0 +1,43 @@
+<div style="display: flex; flex-direction: column; padding: 25px 0 25px 0; margin-bottom: 30px;">
+
+<a routerLink="/" mat-stroked-button color="primary" style="align-self: start;"   matTooltip="Back" matTooltipPosition="above" matTooltipClass="mat-tooltip"><mat-icon>arrow_back</mat-icon></a>
+<h1  style="color: #3f51b5; align-self: center; ">User Details</h1>
+</div>
+
+<mat-card style="width: 60%; margin: auto;"> 
+<form [formGroup]="userDetailsForm" style="width: 90%; margin: auto; font-size: 16px;color: #3f51b5;">
+        
+    <mat-form-field style="width: 48%; margin-right: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+    <mat-form-field style="width: 48%; margin-left: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+    <mat-form-field  style="width: 48%; margin-right: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">Username</mat-label>
+        <input matInput placeholder="username" formControlName="username" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+    <mat-form-field style="width: 48%; margin-left: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">Password</mat-label>
+        <input matInput placeholder="password" formControlName="password" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+    <mat-form-field  style="width: 48%; margin-right: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">OIB</mat-label>
+        <input matInput placeholder="OIB" formControlName="OIB" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+    <mat-form-field style="width: 48%; margin-left: 1.5%;" appearance="outline">
+        <mat-label style="font-size: 16px">Country</mat-label>
+        <input matInput placeholder="country" formControlName="country" style="text-align: center; font-size: 18px; margin: 10px 0;" readonly>
+    </mat-form-field>
+
+</form>
+</mat-card>
+
+

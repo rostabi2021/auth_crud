@@ -1,0 +1,78 @@
+<div style = "position:relative; right: -16px; top:-18px; overflow: auto;">
+    <a mat-dialog-close><mat-icon style="font-weight: 1000; cursor: pointer; float: right;">clear</mat-icon></a>
+</div>
+  
+<h2 mat-dialog-title  align="center" style="color: #3f51b5; margin-top: -25px;">Add New User</h2>
+
+<mat-sidenav-container>
+    <mat-sidenav-content style="padding: 20px 0">
+<form [formGroup]="addNewUserForm" style="width: 60%; margin: auto; font-size: 15px;">
+      
+    <mat-form-field style="margin-bottom: 10px;">
+        <input matInput placeholder="First Name" formControlName="firstName" required>  
+        <mat-error *ngIf="addNewUserForm.get('firstName').errors?.required">
+            First Name is required
+        </mat-error> 
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: 10px;">
+        <input matInput placeholder="Last Name" formControlName="lastName" required>
+        <mat-error *ngIf="addNewUserForm.get('lastName').errors?.required">
+            Last Name is required
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: 10px;">
+        <input matInput placeholder="Username" formControlName="username" required>
+        <mat-error *ngIf="addNewUserForm.get('username').errors?.required">
+            Username is required
+        </mat-error>
+        <mat-error *ngIf="addNewUserForm.get('username').errors?.usernameAlreadyExists">
+            This username already exists
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: 10px;">
+        <input matInput type="password" placeholder="Password" formControlName="password" required>
+        <mat-error *ngIf="addNewUserForm.get('password').errors?.required">
+            Password is required
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: 10px;">
+        <input type="number" matInput placeholder="OIB" formControlName="OIB" required>
+        <mat-error *ngIf="addNewUserForm.get('OIB').errors?.required">
+            OIB is required
+        </mat-error>
+        <mat-error *ngIf="addNewUserForm.get('OIB').errors?.oibMaxValidator">
+            OIB must have exactly 11 digits
+        </mat-error>
+        <mat-error *ngIf="addNewUserForm.get('OIB').errors?.oibMinValidator">
+            OIB must have exactly 11 digits
+        </mat-error>
+        <mat-error *ngIf="addNewUserForm.get('OIB').errors?.oibAlreadyExists">
+            OIB already exists
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field style="margin-bottom: 10px;">
+        <mat-label>Country</mat-label>
+        <mat-select formControlName="country" required>
+            <mat-option *ngFor="let country of countries" [value]="country.id">
+                {{country.countryCode}} - {{country.countryName}}
+            </mat-option>
+        </mat-select>
+        <mat-error *ngIf="addNewUserForm.get('country').errors?.required">
+            Country is required
+        </mat-error>
+    </mat-form-field>
+
+</form>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<mat-dialog-actions align="center">
+    <div style="margin-top: 10px; margin-bottom: 20px; text-align: center;">
+        <button (click)="onAddUser()" *ngIf="addNewUserForm.valid" [mat-dialog-close]="true" mat-flat-button color="primary">Submit</button>
+        <button *ngIf="!addNewUserForm.valid" style="cursor: not-allowed;" disabled mat-flat-button color="primary">Submit</button>
+    </div>
+</mat-dialog-actions>
